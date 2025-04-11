@@ -16,7 +16,7 @@ FILENAME=huber.orgue
 if [ -f "${FILENAME}" ]; then
     rm -f "${FILENAME}"
 fi
-zip -0 -r "${FILENAME}" * -x fowviel.zip -x install.sh -x Fowviel.ttf
+zip -0 -r "${FILENAME}" * -x fowviel.zip -x install.sh -x Fowviel.ttf -x README.md -x LICENSE
 CURDIR="$(pwd)"
 cd ~
 USERDIR="$(pwd)"
@@ -34,8 +34,11 @@ else
     fi
     mv "${FILENAME}" "${TARGET}${FILENAME}"
 fi
-unzip fowviel.zip
+unzip -o fowviel.zip
 TARGET="${USERDIR}/.local/share/fonts/"
+if [ ! -d "${TARGET}" ]; then
+    mkdir -p "${TARGET}"
+fi
 if [ ! -d "${TARGET}" ]; then
     echo
     echo "Local font directory not found."
