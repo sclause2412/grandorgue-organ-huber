@@ -12,16 +12,20 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+CURDIR="$(pwd)"
+cd ~
+USERDIR="$(pwd)"
+cd "${CURDIR}"
+
+
 FILENAME=huber.orgue
 if [ -f "${FILENAME}" ]; then
     rm -f "${FILENAME}"
 fi
-zip -0 -r "${FILENAME}" * -x fowviel.zip -x install.sh -x Fowviel.ttf -x README.md -x LICENSE
-CURDIR="$(pwd)"
-cd ~
-USERDIR="$(pwd)"
+cd Organ
+zip -0 -r "../${FILENAME}" *
+cd ..
 TARGET="${USERDIR}/GrandOrgue/Organ packages/"
-cd "${CURDIR}"
 if [ ! -d "${TARGET}" ]; then
     echo
     echo "Organ packages directory not found. Do you have GrandOrgue installed?"
