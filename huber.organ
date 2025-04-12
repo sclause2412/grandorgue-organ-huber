@@ -782,7 +782,7 @@ DispKeyVertBackgroundImageNum=04
 DispDrawstopInsetBackgroundImageNum=04
 DispExtraButtonRows=0
 DispPairDrawstopCols=N
-NumberOfGUIElements=3
+NumberOfGUIElements=4
 NumberOfImages=1
 
 
@@ -830,6 +830,22 @@ DispLabelFontName=Fowviel
 DispLabelColour=White
 PositionX=802
 PositionY=277
+
+
+[Panel000Element004]
+Type=PanicButton
+ImageOn=Interface\Stop\Panic.png
+ImageOff=Interface\Stop\Panic.png
+Width=50
+Height=50
+DispLabelFontSize=36
+DispLabelFontName=Fowviel
+DispLabelColour=Black
+DispLabelText=!
+PositionX=621
+PositionY=521
+MouseRadius=0
+
 
 
 [Panel001]
