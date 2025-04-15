@@ -71,6 +71,7 @@ fi
 cat <<EOF >~/.xinitrc
 #!/bin/bash
 for sink in \`pactl list short sinks | cut -f 2\`; do
+    pactl set-sink-mute \$sink 0
     pactl set-sink-volume \$sink 100%
 done
 unclutter &
