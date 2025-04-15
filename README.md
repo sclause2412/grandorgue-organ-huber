@@ -1,5 +1,7 @@
 # Virtual Pipe Organ Extension - Huber Orgel Deutsch Kaltenbrunn
 
+## Organ
+
 This virtual pipe organ is not a full organ but is very limited because it is only an extension for a real pneumatic pipe organ in Deutsch Kaltenbrunn.
 
 The target of this project is to add reed registers to the existing organ without modifying the organ itself. If GrandOrgue is not started the organ should still be fully functional.
@@ -18,24 +20,73 @@ Compared to a typical virtual pipe organ this organ does not have (on the main v
 
 For debugging purposes the manuals and pedals can be switched on with a second view. The keys are very big because otherwise you cannot touch them on the small screen.
 
+## Environment
+
+This organ is intended to be used with GrandOrgue software on a PC which is mounted inside the organ with a remote on/off switch and a touch screen mounted on the organ console.
+In final state there is no keyboard or mouse attached.
+
+The PC runs with Arch Linux. This project is also used for documenting the installation process of the whole system.
+
 # Installation
 
-Install GrandOrgue and run the following code on the machine:
+## Full installation
 
-    git clone https://github.com/sclause2412/grandorgue-organ-huber
-    cd grandorgue-organ-huber
-    chmod +x install.sh
-    ./install.sh
+For installation use an installation medium containing Arch Linux. This can be a DVD or a USB stick. Manuals for creating the installation medium can be found in the [Arch Linux Wiki](https://wiki.archlinux.org/).
 
-The installation script is written for a standard GrandOrgue installation on an Arch Linux machine. If you have any other setup you may do some things manually:
+After booting from the installation medium run `archinstall` command to use the installation assistant.
+For most settings like language and region settings, hard drive partitioning, etc. you can follow the official guide.
+Don't forget to connect to the network during installation and organ setup. Network can be disconnected once the installation is done.
 
-* Put all files except fowviel.zip and install.sh into a ZIP archive with no compression and rename it to huber.orgue
-* Copy this file to your organ packages folder
-* Install the font which you can find in fowviel.zip
+Important (recommended) settings for GrandOrgue:
+
+* Hostname: grandorgue
+* Users: Add a user with username grandorgue and password of your choice. Add user to sudo group.
+* Profile: xorg
+* Audio: Pulseaudio
+* Network: Copy from ISO
+* Additional packages: git
+
+After installation reboot the system and log in with grandorgue user.
+
+Now you can install everything with:
+
+```shell
+git clone https://github.com/sclause2412/grandorgue-organ-huber
+cd grandorgue-organ-huber
+chmod +x install.sh
+./install.sh
+```
+
+After installation the PC should automatically restart and GrandOrgue is loaded.
+
+Make all your organ settings you need and then exit GrandOrgue with the menu. The settings will automatically be saved in a permanent space. The next time you restart the PC the settings will be restored. With this technique the organ is save from accidential reconfigurations.
+
+To save new settings just make your changes in GrandOrgue, close it and then run `./save` in your home folder.
+
+To access a console press `Win+Enter` on the PC or connect via ssh.
+
+If there is no need to change settings it is recommended to disconnect any keyboard, mouse or network for security reasons.
+
+## Organ only
+
+If you have already an existing system running GrandOrge you can use the following commands to create the Organ package:
+
+```shell
+git clone https://github.com/sclause2412/grandorgue-organ-huber
+cd grandorgue-organ-huber
+chmod +x pack.sh
+./pack.sh
+```
+
+This will give you a file huber.orgue which you then can install with the GrandOrgue UI.
+
+If you are running a Windows machine then simply use a ZIP program and pack all the files from the Organ folder into a ZIP archive with **no compression**. Rename that ZIP file to huber.orgue and install it using GrandOrgue UI.
+
+To see the correct font install the font file from the Fowviel.zip archive.
 
 # License
 
-This organ is licensed under the CC BY-SA 4.0 International license. See more details in the [LICENSE](LICENSE) file or on the [Creative Commons Website](https://creativecommons.org/licenses/by-sa/4.0/).
+This organ and the installation script is licensed under the CC BY-SA 4.0 International license. See more details in the [LICENSE](LICENSE) file or on the [Creative Commons Website](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Attention: Only the organ definition, structure, images and installation script are affected by this license. The samples and font are taken over from other projects and have different licenses (see below).
 
