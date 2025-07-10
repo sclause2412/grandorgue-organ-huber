@@ -59,7 +59,7 @@ chmod +x install.sh
 
 After installation the PC should automatically restart and GrandOrgue is loaded.
 
-Make all your organ settings you need and then exit GrandOrgue with the menu. The settings will automatically be saved in a permanent space. The next time you restart the PC the settings will be restored. With this technique the organ is save from accidential reconfigurations.
+Make all your organ settings you need, save the settings and then exit GrandOrgue with the menu. The settings will automatically be saved in a permanent space. The next time you restart the PC the settings will be restored. With this technique the organ is save from accidential reconfigurations.
 
 To save new settings just make your changes in GrandOrgue, then run `./save` in your home folder and follow the instructions.
 

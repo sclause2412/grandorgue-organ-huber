@@ -98,7 +98,10 @@ touch ~/firstrun
 cat <<EOF >~/save
 #!/bin/bash
 while pgrep -x GrandOrgue >/dev/null; do
-    echo Close GrandOrgue now to save settings...
+    echo Make your settings in GrandOrgue
+    echo Then save the settings (file menu)
+    echo and close GrandOrgue...
+    echo
     sleep 5
 done
 cp -f ~/GrandOrgueConfig ~/GrandOrgueConfig.default
@@ -112,6 +115,7 @@ cat <<EOF >~/grandorgue
 #!/bin/bash
 if [ -f ~/firstrun ]; then
     ~/save &
+    rm ~/firstrun
 fi
 while true; do
     if [ -f ~/GrandOrgueConfig.default ]; then
