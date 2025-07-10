@@ -97,7 +97,7 @@ touch ~/firstrun
 
 cat <<EOF >~/save
 #!/bin/bash
-while [ -n "$(ps -e | grep GrandOrgue)" ]; do
+while pgrep -x GrandOrgue >/dev/null; do
     echo Close GrandOrgue now to save settings...
     sleep 5
 done
