@@ -93,33 +93,41 @@ done
 EOF
 chmod +x ~/autoshutdown
 
+touch ~/firstrun
+
 cat <<EOF >~/save
 #!/bin/bash
+while pgrep -x GrandOrgue >/dev/null; do
+    echo Make your settings in GrandOrgue
+    echo Then save the settings (file menu)
+    echo and close GrandOrgue...
+    echo
+    sleep 5
+done
 cp -f ~/GrandOrgueConfig ~/GrandOrgueConfig.default
 rm -rf ~/GrandOrgue/Data.default
 cp -a ~/GrandOrgue/Data ~/GrandOrgue/Data.default
+echo Settings saved!
 EOF
 chmod +x ~/save
 
 cat <<EOF >~/grandorgue
 #!/bin/bash
-if [ -f ~/GrandOrgueConfig.default ]; then
-    cp -f ~/GrandOrgueConfig.default ~/GrandOrgueConfig
-fi
-if [ -d ~/GrandOrgue/Data.default ]; then
-    rm -rf ~/GrandOrgue/Data
-    cp -a ~/GrandOrgue/Data.default ~/GrandOrgue/Data
+if [ -f ~/firstrun ]; then
+    ~/save &
+    rm ~/firstrun
 fi
 while true; do
-    GrandOrgue "~/GrandOrgue/Organ packages/huber.orgue"
+    if [ -f ~/GrandOrgueConfig.default ]; then
+        cp -f ~/GrandOrgueConfig.default ~/GrandOrgueConfig
+    fi
+    if [ -d ~/GrandOrgue/Data.default ]; then
+        rm -rf ~/GrandOrgue/Data
+        cp -a ~/GrandOrgue/Data.default ~/GrandOrgue/Data
+    fi
     sleep 2
-    if [ ! -f ~/GrandOrgueConfig.default ]; then
-        cp -f ~/GrandOrgueConfig ~/GrandOrgueConfig.default
-    fi
-    if [ ! -d ~/GrandOrgue/Data.default ]; then
-        cp -a ~/GrandOrgue/Data ~/GrandOrgue/Data.default
-    fi
-    sleep 8
+    GrandOrgue "~/GrandOrgue/Organ packages/huber.orgue"
+    sleep 10
 done
 EOF
 chmod +x ~/grandorgue
