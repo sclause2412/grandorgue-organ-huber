@@ -1,3 +1,7 @@
+# ATTENTION
+
+This is a special branch with some special pitch label fixes which uses a custom repository instead of official AUR. See [Full installation](#full-installation) for details.
+
 # Virtual Pipe Organ Extension - Huber Orgel Deutsch Kaltenbrunn
 
 ## Organ
@@ -53,6 +57,7 @@ Now you can install everything with:
 ```shell
 git clone https://github.com/sclause2412/grandorgue-organ-huber
 cd grandorgue-organ-huber
+git checkout fix
 chmod +x install.sh
 ./install.sh
 ```
@@ -74,6 +79,7 @@ If you have already an existing system running GrandOrge you can use the followi
 ```shell
 git clone https://github.com/sclause2412/grandorgue-organ-huber
 cd grandorgue-organ-huber
+git checkout fix
 chmod +x pack.sh
 ./pack.sh
 ```
