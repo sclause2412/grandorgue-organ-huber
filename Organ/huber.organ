@@ -3,7 +3,7 @@ ChurchName=Auferstehungskirche Deutsch Kaltenbrunn
 OrganBuilder=Klaus Fröhlich
 ChurchAddress=Kirchenallee 1, 7572 Deutsch Kaltenbrunn, Austria
 OrganComments=Organ published under the CC BY-SA 4.0, samples published under the GPLv2 and the CC BY-SA 2.5, CC BY-NC-SA 3.0, CC BY-SA 4.0
-RecordingDetails=Bureå Church, Sweden by Lars Palo (2023), Piteå MHS, Sweden by Lars Palo (2010), Jukkasjärvi Church by Lars Palo (2024) Barton Theatre Organ 3/7 by Joe Hardy (2007) and Lynn Walls (2011), Cleste F by Dominique Lacaud (2020), Steinway Model B by Dominique Lacaud (2017)
+RecordingDetails=Bureå Church, Sweden by Lars Palo (2023), Piteå MHS, Sweden by Lars Palo (2010), Jukkasjärvi Church by Lars Palo (2024) Barton Theatre Organ 3/7 by Joe Hardy (2007), Cleste F by Dominique Lacaud (2020), Steinway Model B by Dominique Lacaud (2017)
 NumberOfManuals=3
 HasPedals=Y
 NumberOfGenerals=0
@@ -443,7 +443,7 @@ MouseRadius=0
 
 
 [Stop204]
-; Recordings by Joe Hardy and Lynn Walls, Barton Theatre Organ 3/7
+; Recordings by Joe Hardy, Barton Theatre Organ 3/7
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
