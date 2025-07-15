@@ -101,7 +101,13 @@ The samples are quite "dry" which is needed because I have the acoustic from the
 
 **Lars Palo**
 
-Im using the registers Basun 16' (Posaune 16'), Trumpet 8' (Trompete 8') and Skalmeja 8' (Schalmei 8') from his beautiful sampleset "Bureå Church, Sweden" recorded / reworked in 2023. This sampleset is licensed under CC BY-SA 2.5 Sweden. More information on Lars' website: [Lars Virtual Pipe Organs](https://familjenpalo.se/vpo/)
+Im using the register Basun 16' (Posaune 32') from his beautiful sampleset "Bureå Church, Sweden" recorded / reworked in 2023. This sampleset is licensed under CC BY-SA 2.5 Sweden.
+
+Im using the registers Basun 16' (Posaune 16'), Trumpet 8' (Trompete 8'), Cromorne 8' (Krummhorn 8') and Oboe 8' (Oboe 8') from his beautiful sampleset "Piteå HMS, Sweden" recorded in 2010. This sampleset is licensed under CC BY-SA 2.5.
+
+Im using the register Cymbelstjärna (Cymbelstern) from his beautiful sampleset "Jukkasjärvi Church, Sweden" recorded in 2024. This sampleset is licensed under CC BY-SA 4.0.
+
+More information on Lars' website: [Lars Virtual Pipe Organs](https://familjenpalo.se/vpo/)
 
 **Dominique Lacaud**
 
@@ -110,6 +116,11 @@ He has created two samplesets:
 * Steinway Model B from year 2017 which I use for Klavier
 
 Both samplesets are licensed under GPLv2. Please have a look on his website for much more very beautiful small samplesets of different instruments: [OdfGrandOrgue](http://orgues-dominiquelacaud.fr/)
+
+**Joe Hardy**
+
+Together with Lynn Walls he created very nice sampleset for a Barton 3/7 Theatre Organ.
+I'm using the Chimes (Glocken) stop for this organ. The sampleset is licensed under CC BY-NC-SA 3.0. The sampleset is available on the website of Lars Palo.
 
 **Dmitry Barsukov**
 
