@@ -2,17 +2,17 @@
 ChurchName=Auferstehungskirche Deutsch Kaltenbrunn
 OrganBuilder=Klaus Fröhlich
 ChurchAddress=Kirchenallee 1, 7572 Deutsch Kaltenbrunn, Austria
-OrganComments=Organ published under the CC BY-SA 4.0, samples published under the GPLv2 and the CC BY-SA 2.5
-RecordingDetails=Bureå Church, Sweden by Lars Palo (2023), Cleste F by Dominique Lacaud (2020), Steinway Model B by Dominique Lacaud (2017)
-NumberOfManuals=2
+OrganComments=Organ published under the CC BY-SA 4.0, samples published under the GPLv2 and the CC BY-SA 2.5, CC BY-NC-SA 3.0, CC BY-SA 4.0
+RecordingDetails=Bureå Church, Sweden by Lars Palo (2023), Piteå MHS, Sweden by Lars Palo (2010), Jukkasjärvi Church by Lars Palo (2024) Barton Theatre Organ 3/7 by Joe Hardy (2007), Cleste F by Dominique Lacaud (2020), Steinway Model B by Dominique Lacaud (2017)
+NumberOfManuals=3
 HasPedals=Y
 NumberOfGenerals=0
 NumberOfEnclosures=0
 NumberOfTremulants=0
-NumberOfWindchestGroups=3
+NumberOfWindchestGroups=4
 NumberOfReversiblePistons=0
 NumberOfDivisionalCouplers=0
-NumberOfRanks=5
+NumberOfRanks=9
 NumberOfSwitches=0
 NumberOfPanels=1
 DivisionalsStoreTremulants=N
@@ -25,15 +25,14 @@ AmplitudeLevel=100
 
 [Manual000]
 Name=Pedal
-MIDIInputNumber=001
+MIDIInputNumber=1
 NumberOfLogicalKeys=27
 NumberOfAccessibleKeys=27
 FirstAccessibleKeyLogicalKeyNumber=1
 FirstAccessibleKeyMIDINoteNumber=36
-NumberOfStops=1
+NumberOfStops=2
 Stop001=001
-NumberOfSwitches=0
-;Switch001=001
+Stop002=002
 NumberOfCouplers=2
 Coupler001=001
 Coupler002=002
@@ -43,7 +42,7 @@ NumberOfDivisionals=0
 
 [Manual001]
 Name=Hauptwerk
-MIDIInputNumber=002
+MIDIInputNumber=2
 NumberOfLogicalKeys=56
 NumberOfAccessibleKeys=56
 FirstAccessibleKeyLogicalKeyNumber=1
@@ -51,8 +50,6 @@ FirstAccessibleKeyMIDINoteNumber=36
 NumberOfStops=2
 Stop001=101
 Stop002=102
-NumberOfSwitches=0
-;Switch001=101
 NumberOfCouplers=3
 Coupler001=003
 Coupler002=004
@@ -63,20 +60,32 @@ NumberOfDivisionals=0
 
 [Manual002]
 Name=Positiv
-MIDIInputNumber=003
+MIDIInputNumber=3
 NumberOfLogicalKeys=56
 NumberOfAccessibleKeys=56
 FirstAccessibleKeyLogicalKeyNumber=1
 FirstAccessibleKeyMIDINoteNumber=36
-NumberOfStops=2
+NumberOfStops=4
 Stop001=201
 Stop002=202
-NumberOfSwitches=0
-;Switch001=201
+Stop003=203
+Stop004=204
 NumberOfCouplers=1
 Coupler001=006
 NumberOfTremulants=0
 NumberOfDivisionals=0
+
+
+[Manual003]
+Name=Effekte
+MIDIInputNumber=0
+NumberOfLogicalKeys=1
+NumberOfAccessibleKeys=1
+FirstAccessibleKeyLogicalKeyNumber=1
+FirstAccessibleKeyMIDINoteNumber=36
+NumberOfStops=1
+Stop001=501
+Displayed=N
 
 
 [WindchestGroup001]
@@ -97,6 +106,12 @@ NumberOfEnclosures=0
 NumberOfTremulants=0
 
 
+[WindchestGroup004]
+Name=Windlade Effekte
+NumberOfEnclosures=0
+NumberOfTremulants=0
+
+
 [Coupler001]
 Function=Input
 Name=Pedal Koppel I
@@ -113,13 +128,13 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=747
-PositionY=435
+PositionX=472
+PositionY=464
 MouseRadius=0
 
 
@@ -139,13 +154,13 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=857
-PositionY=435
+PositionX=572
+PositionY=464
 MouseRadius=0
 
 
@@ -165,13 +180,13 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=12
-PositionY=435
+PositionX=20
+PositionY=464
 MouseRadius=0
 
 
@@ -191,13 +206,13 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=122
-PositionY=435
+PositionX=120
+PositionY=464
 MouseRadius=0
 
 
@@ -217,13 +232,13 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=232
-PositionY=435
+PositionX=220
+PositionY=464
 MouseRadius=0
 
 
@@ -243,17 +258,18 @@ DisplayInInvertedState=N
 DefaultToEngaged=N
 ImageOn=Interface\Stop\Koppel_on.png
 ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+Width=90
 Height=100
-DispLabelFontSize=24
+DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=462
-PositionY=435
+PositionX=346
+PositionY=464
 MouseRadius=0
 
 
 [Stop001]
+; Recordings by Lars Palo, Piteå HMS
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
@@ -263,21 +279,47 @@ Name=Posaune 16'
 NumberOfAccessiblePipes=27
 FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfRanks=1
-Rank001=001
+Rank001=004
 Rank001FirstPipeNumber=1
-ImageOn=Interface\Stop\Stop_250_on.png
-ImageOff=Interface\Stop\Stop_250_off.png
-Width=300
-Height=250
-DispLabelFontSize=36
+ImageOn=Interface\Stop\Stop1_on.png
+ImageOff=Interface\Stop\Stop1_off.png
+Width=140
+Height=200
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=702
-PositionY=13
+PositionX=704
+PositionY=20
+MouseRadius=0
+
+
+[Stop002]
+; Recordings by Lars Palo, Bureå Church
+Function=Input
+Displayed=Y
+DisplayInInvertedState=N
+DefaultToEngaged=N
+Name=Posaune 32'
+;'
+NumberOfAccessiblePipes=27
+FirstAccessiblePipeLogicalKeyNumber=1
+NumberOfRanks=1
+Rank001=005
+Rank001FirstPipeNumber=1
+ImageOn=Interface\Stop\Stop1_on.png
+ImageOff=Interface\Stop\Stop1_off.png
+Width=140
+Height=200
+DispLabelFontSize=28
+DispLabelFontName=Fowviel
+DispLabelColour=Black
+PositionX=864
+PositionY=20
 MouseRadius=0
 
 
 [Stop101]
+; Recordings by Lars Palo, Piteå HMS
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
@@ -287,21 +329,22 @@ Name=Trompete 8'
 NumberOfAccessiblePipes=56
 FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfRanks=1
-Rank001=002
+Rank001=001
 Rank001FirstPipeNumber=1
-ImageOn=Interface\Stop\Stop_250_on.png
-ImageOff=Interface\Stop\Stop_250_off.png
-Width=300
-Height=250
-DispLabelFontSize=36
+ImageOn=Interface\Stop\Stop1_on.png
+ImageOff=Interface\Stop\Stop1_off.png
+Width=140
+Height=200
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=22
-PositionY=13
+PositionX=20
+PositionY=20
 MouseRadius=0
 
 
 [Stop102]
+; Recordings by Dominique Lacaud, Steinway Model B
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
@@ -310,45 +353,73 @@ Name=Klavier
 NumberOfAccessiblePipes=56
 FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfRanks=1
-Rank001=004
+Rank001=006
 Rank001FirstPipeNumber=1
-ImageOn=Interface\Stop\Stop_100_on.png
-ImageOff=Interface\Stop\Stop_100_off.png
-Width=300
-Height=100
-DispLabelFontSize=36
+ImageOn=Interface\Stop\Stop2_on.png
+ImageOff=Interface\Stop\Stop2_off.png
+Width=140
+Height=160
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=22
-PositionY=277
+PositionX=20
+PositionY=262
 MouseRadius=0
 
 
 [Stop201]
+; Recordings by Lars Palo, Piteå HMS
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
 DefaultToEngaged=N
-Name=Schalmei 8'
+Name=Krum- horn 8'
+;'
+NumberOfAccessiblePipes=56
+FirstAccessiblePipeLogicalKeyNumber=1
+NumberOfRanks=1
+Rank001=002
+Rank001FirstPipeNumber=1
+ImageOn=Interface\Stop\Stop1_on.png
+ImageOff=Interface\Stop\Stop1_off.png
+Width=140
+Height=200
+DispLabelFontSize=28
+DispLabelFontName=Fowviel
+DispLabelColour=Black
+PositionX=362
+PositionY=20
+MouseRadius=0
+
+
+[Stop202]
+; Recordings by Lars Palo, Piteå HMS
+Function=Input
+Displayed=Y
+DisplayInInvertedState=N
+DefaultToEngaged=N
+Name=Oboe 8'
 ;'
 NumberOfAccessiblePipes=56
 FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfRanks=1
 Rank001=003
 Rank001FirstPipeNumber=1
-ImageOn=Interface\Stop\Stop_250_on.png
-ImageOff=Interface\Stop\Stop_250_off.png
-Width=300
-Height=250
-DispLabelFontSize=36
+ImageOn=Interface\Stop\Stop1_on.png
+ImageOff=Interface\Stop\Stop1_off.png
+Width=140
+Height=200
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
-PositionX=362
-PositionY=13
+TextBreakWidth=90
+PositionX=522
+PositionY=20
 MouseRadius=0
 
 
-[Stop202]
+[Stop203]
+; Recordings by Dominique Lacaud, Celeste F
 Function=Input
 Displayed=Y
 DisplayInInvertedState=N
@@ -357,57 +428,69 @@ Name=Celesta
 NumberOfAccessiblePipes=56
 FirstAccessiblePipeLogicalKeyNumber=1
 NumberOfRanks=1
-Rank001=005
+Rank001=007
 Rank001FirstPipeNumber=1
-ImageOn=Interface\Stop\Stop_100_on.png
-ImageOff=Interface\Stop\Stop_100_off.png
-Width=300
-Height=100
-DispLabelFontSize=36
+ImageOn=Interface\Stop\Stop2_on.png
+ImageOff=Interface\Stop\Stop2_off.png
+Width=140
+Height=160
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
 PositionX=362
-PositionY=277
+PositionY=262
+MouseRadius=0
+
+
+[Stop204]
+; Recordings by Joe Hardy, Barton Theatre Organ 3/7
+Function=Input
+Displayed=Y
+DisplayInInvertedState=N
+DefaultToEngaged=N
+Name=Glocken
+NumberOfAccessiblePipes=25
+FirstAccessiblePipeLogicalKeyNumber=20
+NumberOfRanks=1
+Rank001=008
+Rank001FirstPipeNumber=1
+ImageOn=Interface\Stop\Stop2_on.png
+ImageOff=Interface\Stop\Stop2_off.png
+Width=140
+Height=160
+DispLabelFontSize=28
+DispLabelFontName=Fowviel
+DispLabelColour=Black
+PositionX=522
+PositionY=262
+MouseRadius=0
+
+
+[Stop501]
+; Recordings by Lars Palo, Jukkasjärvi Church
+Function=Input
+Displayed=Y
+DisplayInInvertedState=N
+DefaultToEngaged=N
+Name=Cymbel- stern
+NumberOfAccessiblePipes=1
+FirstAccessiblePipeLogicalKeyNumber=1
+NumberOfRanks=1
+Rank001=009
+Rank001FirstPipeNumber=1
+ImageOn=Interface\Stop\Stop3_on.png
+ImageOff=Interface\Stop\Stop3_off.png
+Width=140
+Height=160
+DispLabelFontSize=28
+DispLabelFontName=Fowviel
+DispLabelColour=Black
+PositionX=704
+PositionY=262
 MouseRadius=0
 
 
 [Rank001]
-Name=Posaune 16
-FirstMidiNoteNumber=36
-NumberOfLogicalPipes=27
-WindchestGroup=001
-Percussive=N
-HarmonicNumber=4
-Pipe001=Posaune16\036-C.wav
-Pipe002=Posaune16\037-C#.wav
-Pipe003=Posaune16\038-D.wav
-Pipe004=Posaune16\039-D#.wav
-Pipe005=Posaune16\040-E.wav
-Pipe006=Posaune16\041-F.wav
-Pipe007=Posaune16\042-F#.wav
-Pipe008=Posaune16\043-G.wav
-Pipe009=Posaune16\044-G#.wav
-Pipe010=Posaune16\045-A.wav
-Pipe011=Posaune16\046-A#.wav
-Pipe012=Posaune16\047-B.wav
-Pipe013=Posaune16\048-C.wav
-Pipe014=Posaune16\049-C#.wav
-Pipe015=Posaune16\050-D.wav
-Pipe016=Posaune16\051-D#.wav
-Pipe017=Posaune16\052-E.wav
-Pipe018=Posaune16\053-F.wav
-Pipe019=Posaune16\054-F#.wav
-Pipe020=Posaune16\055-G.wav
-Pipe021=Posaune16\056-G#.wav
-Pipe022=Posaune16\057-A.wav
-Pipe023=Posaune16\058-A#.wav
-Pipe024=Posaune16\059-B.wav
-Pipe025=Posaune16\060-C.wav
-Pipe026=Posaune16\061-C#.wav
-Pipe027=Posaune16\062-D.wav
-
-
-[Rank002]
 Name=Trompete 8
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=56
@@ -472,72 +555,209 @@ Pipe055=Trompete8\090-F#.wav
 Pipe056=Trompete8\091-G.wav
 
 
-[Rank003]
-Name=Schalmei 8
+[Rank002]
+Name=Krumhorn 8
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=56
 WindchestGroup=003
-Percussive=N
 HarmonicNumber=8
-Pipe001=Schalmei8\036-C.wav
-Pipe002=Schalmei8\037-C#.wav
-Pipe003=Schalmei8\038-D.wav
-Pipe004=Schalmei8\039-D#.wav
-Pipe005=Schalmei8\040-E.wav
-Pipe006=Schalmei8\041-F.wav
-Pipe007=Schalmei8\042-F#.wav
-Pipe008=Schalmei8\043-G.wav
-Pipe009=Schalmei8\044-G#.wav
-Pipe010=Schalmei8\045-A.wav
-Pipe011=Schalmei8\046-A#.wav
-Pipe012=Schalmei8\047-B.wav
-Pipe013=Schalmei8\048-C.wav
-Pipe014=Schalmei8\049-C#.wav
-Pipe015=Schalmei8\050-D.wav
-Pipe016=Schalmei8\051-D#.wav
-Pipe017=Schalmei8\052-E.wav
-Pipe018=Schalmei8\053-F.wav
-Pipe019=Schalmei8\054-F#.wav
-Pipe020=Schalmei8\055-G.wav
-Pipe021=Schalmei8\056-G#.wav
-Pipe022=Schalmei8\057-A.wav
-Pipe023=Schalmei8\058-A#.wav
-Pipe024=Schalmei8\059-B.wav
-Pipe025=Schalmei8\060-C.wav
-Pipe026=Schalmei8\061-C#.wav
-Pipe027=Schalmei8\062-D.wav
-Pipe028=Schalmei8\063-D#.wav
-Pipe029=Schalmei8\064-E.wav
-Pipe030=Schalmei8\065-F.wav
-Pipe031=Schalmei8\066-F#.wav
-Pipe032=Schalmei8\067-G.wav
-Pipe033=Schalmei8\068-G#.wav
-Pipe034=Schalmei8\069-A.wav
-Pipe035=Schalmei8\070-A#.wav
-Pipe036=Schalmei8\071-B.wav
-Pipe037=Schalmei8\072-C.wav
-Pipe038=Schalmei8\073-C#.wav
-Pipe039=Schalmei8\074-D.wav
-Pipe040=Schalmei8\075-D#.wav
-Pipe041=Schalmei8\076-E.wav
-Pipe042=Schalmei8\077-F.wav
-Pipe043=Schalmei8\078-F#.wav
-Pipe044=Schalmei8\079-G.wav
-Pipe045=Schalmei8\080-G#.wav
-Pipe046=Schalmei8\081-A.wav
-Pipe047=Schalmei8\082-A#.wav
-Pipe048=Schalmei8\083-B.wav
-Pipe049=Schalmei8\084-C.wav
-Pipe050=Schalmei8\085-C#.wav
-Pipe051=Schalmei8\086-D.wav
-Pipe052=Schalmei8\087-D#.wav
-Pipe053=Schalmei8\088-E.wav
-Pipe054=Schalmei8\089-F.wav
-Pipe055=Schalmei8\090-F#.wav
-Pipe056=Schalmei8\091-G.wav
+Percussive=N
+Pipe001=Krumhorn8\036-C.wav
+Pipe002=Krumhorn8\037-C#.wav
+Pipe003=Krumhorn8\038-D.wav
+Pipe004=Krumhorn8\039-D#.wav
+Pipe005=Krumhorn8\040-E.wav
+Pipe006=Krumhorn8\041-F.wav
+Pipe007=Krumhorn8\042-F#.wav
+Pipe008=Krumhorn8\043-G.wav
+Pipe009=Krumhorn8\044-G#.wav
+Pipe010=Krumhorn8\045-A.wav
+Pipe011=Krumhorn8\046-A#.wav
+Pipe012=Krumhorn8\047-B.wav
+Pipe013=Krumhorn8\048-C.wav
+Pipe014=Krumhorn8\049-C#.wav
+Pipe015=Krumhorn8\050-D.wav
+Pipe016=Krumhorn8\051-D#.wav
+Pipe017=Krumhorn8\052-E.wav
+Pipe018=Krumhorn8\053-F.wav
+Pipe019=Krumhorn8\054-F#.wav
+Pipe020=Krumhorn8\055-G.wav
+Pipe021=Krumhorn8\056-G#.wav
+Pipe022=Krumhorn8\057-A.wav
+Pipe023=Krumhorn8\058-A#.wav
+Pipe024=Krumhorn8\059-B.wav
+Pipe025=Krumhorn8\060-C.wav
+Pipe026=Krumhorn8\061-C#.wav
+Pipe027=Krumhorn8\062-D.wav
+Pipe028=Krumhorn8\063-D#.wav
+Pipe029=Krumhorn8\064-E.wav
+Pipe030=Krumhorn8\065-F.wav
+Pipe031=Krumhorn8\066-F#.wav
+Pipe032=Krumhorn8\067-G.wav
+Pipe033=Krumhorn8\068-G#.wav
+Pipe034=Krumhorn8\069-A.wav
+Pipe035=Krumhorn8\070-A#.wav
+Pipe036=Krumhorn8\071-B.wav
+Pipe037=Krumhorn8\072-C.wav
+Pipe038=Krumhorn8\073-C#.wav
+Pipe039=Krumhorn8\074-D.wav
+Pipe040=Krumhorn8\075-D#.wav
+Pipe041=Krumhorn8\076-E.wav
+Pipe042=Krumhorn8\077-F.wav
+Pipe043=Krumhorn8\078-F#.wav
+Pipe044=Krumhorn8\079-G.wav
+Pipe045=Krumhorn8\080-G#.wav
+Pipe046=Krumhorn8\081-A.wav
+Pipe047=Krumhorn8\082-A#.wav
+Pipe048=Krumhorn8\083-B.wav
+Pipe049=Krumhorn8\084-C.wav
+Pipe050=Krumhorn8\085-C#.wav
+Pipe051=Krumhorn8\086-D.wav
+Pipe052=Krumhorn8\087-D#.wav
+Pipe053=Krumhorn8\088-E.wav
+Pipe054=Krumhorn8\089-F.wav
+Pipe055=Krumhorn8\090-F#.wav
+Pipe056=Krumhorn8\091-G.wav
+
+
+[Rank003]
+Name=Oboe 8
+FirstMidiNoteNumber=36
+NumberOfLogicalPipes=56
+WindchestGroup=003
+HarmonicNumber=8
+Percussive=N
+Pipe001=Oboe8\036-C.wav
+Pipe002=Oboe8\037-C#.wav
+Pipe003=Oboe8\038-D.wav
+Pipe004=Oboe8\039-D#.wav
+Pipe005=Oboe8\040-E.wav
+Pipe006=Oboe8\041-F.wav
+Pipe007=Oboe8\042-F#.wav
+Pipe008=Oboe8\043-G.wav
+Pipe009=Oboe8\044-G#.wav
+Pipe010=Oboe8\045-A.wav
+Pipe011=Oboe8\046-A#.wav
+Pipe012=Oboe8\047-B.wav
+Pipe013=Oboe8\048-C.wav
+Pipe014=Oboe8\049-C#.wav
+Pipe015=Oboe8\050-D.wav
+Pipe016=Oboe8\051-D#.wav
+Pipe017=Oboe8\052-E.wav
+Pipe018=Oboe8\053-F.wav
+Pipe019=Oboe8\054-F#.wav
+Pipe020=Oboe8\055-G.wav
+Pipe021=Oboe8\056-G#.wav
+Pipe022=Oboe8\057-A.wav
+Pipe023=Oboe8\058-A#.wav
+Pipe024=Oboe8\059-B.wav
+Pipe025=Oboe8\060-C.wav
+Pipe026=Oboe8\061-C#.wav
+Pipe027=Oboe8\062-D.wav
+Pipe028=Oboe8\063-D#.wav
+Pipe029=Oboe8\064-E.wav
+Pipe030=Oboe8\065-F.wav
+Pipe031=Oboe8\066-F#.wav
+Pipe032=Oboe8\067-G.wav
+Pipe033=Oboe8\068-G#.wav
+Pipe034=Oboe8\069-A.wav
+Pipe035=Oboe8\070-A#.wav
+Pipe036=Oboe8\071-B.wav
+Pipe037=Oboe8\072-C.wav
+Pipe038=Oboe8\073-C#.wav
+Pipe039=Oboe8\074-D.wav
+Pipe040=Oboe8\075-D#.wav
+Pipe041=Oboe8\076-E.wav
+Pipe042=Oboe8\077-F.wav
+Pipe043=Oboe8\078-F#.wav
+Pipe044=Oboe8\079-G.wav
+Pipe045=Oboe8\080-G#.wav
+Pipe046=Oboe8\081-A.wav
+Pipe047=Oboe8\082-A#.wav
+Pipe048=Oboe8\083-B.wav
+Pipe049=Oboe8\084-C.wav
+Pipe050=Oboe8\085-C#.wav
+Pipe051=Oboe8\086-D.wav
+Pipe052=Oboe8\087-D#.wav
+Pipe053=Oboe8\088-E.wav
+Pipe054=Oboe8\089-F.wav
+Pipe055=Oboe8\090-F#.wav
+Pipe056=Oboe8\091-G.wav
 
 
 [Rank004]
+Name=Posaune 16
+FirstMidiNoteNumber=36
+NumberOfLogicalPipes=27
+WindchestGroup=001
+Percussive=N
+HarmonicNumber=4
+Pipe001=Posaune16\036-C.wav
+Pipe002=Posaune16\037-C#.wav
+Pipe003=Posaune16\038-D.wav
+Pipe004=Posaune16\039-D#.wav
+Pipe005=Posaune16\040-E.wav
+Pipe006=Posaune16\041-F.wav
+Pipe007=Posaune16\042-F#.wav
+Pipe008=Posaune16\043-G.wav
+Pipe009=Posaune16\044-G#.wav
+Pipe010=Posaune16\045-A.wav
+Pipe011=Posaune16\046-A#.wav
+Pipe012=Posaune16\047-B.wav
+Pipe013=Posaune16\048-C.wav
+Pipe014=Posaune16\049-C#.wav
+Pipe015=Posaune16\050-D.wav
+Pipe016=Posaune16\051-D#.wav
+Pipe017=Posaune16\052-E.wav
+Pipe018=Posaune16\053-F.wav
+Pipe019=Posaune16\054-F#.wav
+Pipe020=Posaune16\055-G.wav
+Pipe021=Posaune16\056-G#.wav
+Pipe022=Posaune16\057-A.wav
+Pipe023=Posaune16\058-A#.wav
+Pipe024=Posaune16\059-B.wav
+Pipe025=Posaune16\060-C.wav
+Pipe026=Posaune16\061-C#.wav
+Pipe027=Posaune16\062-D.wav
+
+
+[Rank005]
+Name=Posaune 32
+FirstMidiNoteNumber=36
+NumberOfLogicalPipes=27
+WindchestGroup=001
+Percussive=N
+HarmonicNumber=2
+Pipe001=Posaune32\036-C.wav
+Pipe002=Posaune32\037-C#.wav
+Pipe003=Posaune32\038-D.wav
+Pipe004=Posaune32\039-D#.wav
+Pipe005=Posaune32\040-E.wav
+Pipe006=Posaune32\041-F.wav
+Pipe007=Posaune32\042-F#.wav
+Pipe008=Posaune32\043-G.wav
+Pipe009=Posaune32\044-G#.wav
+Pipe010=Posaune32\045-A.wav
+Pipe011=Posaune32\046-A#.wav
+Pipe012=Posaune32\047-B.wav
+Pipe013=Posaune32\048-C.wav
+Pipe014=Posaune32\049-C#.wav
+Pipe015=Posaune32\050-D.wav
+Pipe016=Posaune32\051-D#.wav
+Pipe017=Posaune32\052-E.wav
+Pipe018=Posaune32\053-F.wav
+Pipe019=Posaune32\054-F#.wav
+Pipe020=Posaune32\055-G.wav
+Pipe021=Posaune32\056-G#.wav
+Pipe022=Posaune32\057-A.wav
+Pipe023=Posaune32\058-A#.wav
+Pipe024=Posaune32\059-B.wav
+Pipe025=Posaune32\060-C.wav
+Pipe026=Posaune32\061-C#.wav
+Pipe027=Posaune32\062-D.wav
+
+
+[Rank006]
 Name=Klavier
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=56
@@ -644,7 +864,7 @@ Pipe056=Klavier\088-E.wav
 Pipe056PitchTuning=300
 
 
-[Rank005]
+[Rank007]
 Name=Celesta
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=56
@@ -752,6 +972,52 @@ Pipe056=Celesta\085-C#.wav
 Pipe056PitchTuning=600
 
 
+[Rank008]
+Name=Glocken
+FirstMidiNoteNumber=55
+NumberOfLogicalPipes=25
+WindchestGroup=003
+Percussive=Y
+Gain=17
+HarmonicNumber=16
+Pipe001=Glocken\055-G.wv
+Pipe002=Glocken\056-G#.wv
+Pipe003=Glocken\057-A.wv
+Pipe004=Glocken\058-A#.wv
+Pipe005=Glocken\059-B.wv
+Pipe006=Glocken\060-C.wv
+Pipe007=Glocken\061-C#.wv
+Pipe008=Glocken\062-D.wv
+Pipe009=Glocken\063-D#.wv
+Pipe010=Glocken\064-E.wv
+Pipe011=Glocken\065-F.wv
+Pipe012=Glocken\066-F#.wv
+Pipe013=Glocken\067-G.wv
+Pipe014=Glocken\068-G#.wv
+Pipe015=Glocken\069-A.wv
+Pipe016=Glocken\070-A#.wv
+Pipe017=Glocken\071-B.wv
+Pipe018=Glocken\072-C.wv
+Pipe019=Glocken\073-C#.wv
+Pipe020=Glocken\074-D.wv
+Pipe021=Glocken\075-D#.wv
+Pipe022=Glocken\076-E.wv
+Pipe023=Glocken\077-F.wv
+Pipe024=Glocken\078-F#.wv
+Pipe025=Glocken\079-G.wv
+
+
+[Rank009]
+Name=Cymbelstern
+FirstMidiNoteNumber=60
+NumberOfLogicalPipes=1
+WindchestGroup=004
+AcceptsRetuning=N
+Pipe001=Cymbelstern\CymbelSt1.wav
+Pipe001AttackCount=1
+Pipe001Attack001=Cymbelstern\CymbelSt2.wav
+
+
 [Panel000]
 HasPedals=N
 DispExtraDrawstopRows=0
@@ -792,60 +1058,60 @@ Image=Interface\Hintergrund\Raster.png
 
 [Panel000Element001]
 Type=PitchP1
-ImageOn=Interface\Stop\Koppel_on.png
-ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+ImageOn=Interface\Stop\Pitch1.png
+ImageOff=Interface\Stop\Pitch1.png
+Width=80
 Height=100
-DispLabelFontSize=36
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
 DispLabelText=+
-PositionX=902
-PositionY=277
+PositionX=864
+PositionY=464
 MouseRadius=0
 
 
 [Panel000Element002]
 Type=PitchM1
-ImageOn=Interface\Stop\Koppel_on.png
-ImageOff=Interface\Stop\Koppel_off.png
-Width=100
+ImageOn=Interface\Stop\Pitch1.png
+ImageOff=Interface\Stop\Pitch1.png
+Width=80
 Height=100
-DispLabelFontSize=36
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
 DispLabelText=-
-PositionX=702
-PositionY=277
+PositionX=704
+PositionY=464
 MouseRadius=0
 
 
 [Panel000Element003]
 Type=PitchLabel
-Width=100
+Width=80
 Height=100
-Image=Interface\Stop\Pitch.png
+Image=Interface\Stop\Pitch2.png
 DispLabelFontSize=20
 DispLabelFontName=Fowviel
 DispLabelColour=White
-PositionX=802
-PositionY=277
+TextBreakWidth=50
+PositionX=784
+PositionY=464
 
 
 [Panel000Element004]
 Type=PanicButton
 ImageOn=Interface\Stop\Panic.png
 ImageOff=Interface\Stop\Panic.png
-Width=50
-Height=50
-DispLabelFontSize=36
+Width=40
+Height=40
+DispLabelFontSize=28
 DispLabelFontName=Fowviel
 DispLabelColour=Black
 DispLabelText=!
-PositionX=621
-PositionY=521
+PositionX=964
+PositionY=494
 MouseRadius=0
-
 
 
 [Panel001]
