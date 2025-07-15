@@ -44,7 +44,21 @@ check_or_install xprintidle
 check_or_install zip
 check_or_install unzip
 check_or_install nano
-check_or_install grandorgue
+#check_or_install grandorgue
+ret=$(yay -Q grandorgue)
+if [ -z "$ret" ]; then
+    echo Installing grandorgue
+    yay -S --noconfirm $1
+    git clone https://github.com/sclause2412/aur-grandorgue
+    cd aur-grandorgue
+    makepkg -si --noconfirm
+fi
+ret=$(yay -Q grandorgue)
+if [ -z "$ret" ]; then
+    echo Failed to install package grandorgue
+    echo Please install the correct package manually
+    exit 1
+fi
 
 echo Enabling SSH
 sudo systemctl enable sshd
