@@ -97,13 +97,14 @@ touch ~/firstrun
 
 cat <<EOF >~/save
 #!/bin/bash
+echo "Make your settings in GrandOrgue"
+echo "Then save the settings (file menu)"
+echo "and close GrandOrgue..."
 while pgrep -x GrandOrgue >/dev/null; do
-    echo Make your settings in GrandOrgue
-    echo Then save the settings (file menu)
-    echo and close GrandOrgue...
-    echo
+    echo -n .
     sleep 5
 done
+echo
 cp -f ~/GrandOrgueConfig ~/GrandOrgueConfig.default
 rm -rf ~/GrandOrgue/Data.default
 cp -a ~/GrandOrgue/Data ~/GrandOrgue/Data.default
