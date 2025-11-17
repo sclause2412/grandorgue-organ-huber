@@ -37,6 +37,7 @@ function check_or_install {
 }
 check_or_install openssh
 check_or_install xlogin-git
+check_or_install xorg-xset
 check_or_install i3-wm
 check_or_install rxvt-unicode
 check_or_install unclutter
@@ -74,6 +75,8 @@ for sink in \`pactl list short sinks | cut -f 2\`; do
     pactl set-sink-mute \$sink 0
     pactl set-sink-volume \$sink 100%
 done
+xset s off
+xset -dpms
 unclutter &
 ~/autoshutdown &
 exec i3
